@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import {Link} from "@nextui-org/react";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     const { t, i18n } = useTranslation();
@@ -41,7 +41,7 @@ function Footer() {
                         <div className="md:col-span-2">
                             <h3 className="text-lg font-bold mb-4">{t('FooterPage.heading2')}</h3>
                             <ul className="space-y-2">
-                                <li><a href="#contact" className="text-white hover:text-gray-400">{t('FooterPage.contactus')}</a></li>
+                                <li><a href="#ContactUs" className="text-white hover:text-gray-400">{t('FooterPage.contactus')}</a></li>
                                 <li><Link to="/privacypolicy" className="text-white hover:text-gray-400">{t('FooterPage.policy')}</Link></li>
                             </ul>
                         </div>

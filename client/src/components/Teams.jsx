@@ -124,21 +124,21 @@ function Te() {
 
   return (
     <>
-      <div id='Teams' className='flex space-y-2 flex-col text-center mb-14'>
-        <div className='flex space-y-2 flex-col text-center'>
-          <h1 className="md:text-4xl sm:text-3xl xxs:text-4xl text-2xl font-bold text-center mt-8 mb-4 xxs:mb-0 capitalize">
+      <div id='Teams' className='flex space-y-1 flex-col text-center mb-14 xxs:mb-4'>
+        <div className='flex space-y-2 flex-col text-center xxs:p-2 select-none'>
+          <h1 className="xsm:text-4xl md:text-4xl sm:text-3xl xxs:text-3xl text-2xl font-bold text-center mt-8 mb-4 xxs:mb-0 capitalize">
             {t('TeamPage.heading')}
           </h1>
-          <span className='text-2xl md:text-3xl xxs:text-md'>
+          <span className='text-2xl xsm:text-3xl md:text-3xl xxs:text-xsm'>
             {t('TeamPage.subheading1')}
           </span>
-          <span className='text-2xl md:text-3xl xxs:text-md'>
+          <span className='text-2xl xsm:text-3xl md:text-3xl xxs:text-xsm'>
             {t('TeamPage.subheading2')}
           </span>
         </div>
       </div>
 
-      <div className="slider-container min-h-[500px]">
+      <div className="slider-container min-h-[220px]">
         <div className="wrapper" ref={wrapperRef}>
           <FiArrowLeft id="left" className="arrow-icon" />
           <ul className="carousel" ref={carouselRef}>

@@ -17,7 +17,7 @@ function Navbar() {
     const navLink = [
         {
             path: '#Hero',
-            key: 'NavbarPage.Hero'
+            key: 'Hero'
         },
         {
             path: '#About',
@@ -189,14 +189,14 @@ function Navbar() {
                             <div className="lg:inline hidden sm:hidden items-center justify-center">
                                 <div className={`languagedp fixed mt-6 top-8 right-48 w-68 lg:right-32 items-center justify-center bg-white flex flex-col rounded-lg transition-all duration-500 ease-in-out transform ${menuOpenDesk ? '' : 'hidden'}`}>
                                     <div className='mt-6 top-8 right-48 w-56 bg-white flex flex-col rounded-lg' id='divlan' style={{ padding: '10px', margin: '10px' }}>
-                                        <h1 className='mb-4 text-black text-center font-modern capitalize'>{t('Navbar.Selectelanguage')}</h1>
-                                        <button onClick={() => changeLanguage('en')} className='language_btn2 lg:inline space-y-2 hidden border border-black sm:hidden hover:text-primary hover:bg-gray-50 text-black font-bold py-2 px-4  mb-2 rounded'>{t('Navbar.En')}</button>
-                                        <button onClick={() => changeLanguage('tr')} className='language_btn2 lg:inline space-y-2 hidden border border-black sm:hidden hover:text-primary hover:bg-gray-50 text-black font-bold py-2 px-4  mb-2 rounded'>{t('Navbar.Tr')}</button>
+                                        <h1 className='mb-4 text-black text-center font-modern capitalize'>{t('NavbarPage.Selectelanguage')}</h1>
+                                        <button onClick={() => changeLanguage('en')} className='language_btn2 lg:inline space-y-2 hidden border border-black sm:hidden hover:text-primary hover:bg-gray-50 text-black font-bold py-2 px-4  mb-2 rounded'>{t('NavbarPage.En')}</button>
+                                        <button onClick={() => changeLanguage('tr')} className='language_btn2 lg:inline space-y-2 hidden border border-black sm:hidden hover:text-primary hover:bg-gray-50 text-black font-bold py-2 px-4  mb-2 rounded'>{t('NavbarPage.Tr')}</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <button onChange={toggleMenu} className='language_btn2 lg:inline hidden sm:hidden hover:bg-blue-400 text-white font-bold py-2 px-4 rounded'>{currentLanguage === 'en' ? 'English' : 'Türkçe'}</button>
+                            <button onChange={toggleMenu} className='language_btn2 lg:inline hidden sm:hidden select-none text-white font-bold py-2 px-4 rounded'>{currentLanguage === 'en' ? 'English' : 'Türkçe'}</button>
                         </div>
                     </div>
                 </ul>

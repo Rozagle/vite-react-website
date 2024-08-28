@@ -15,10 +15,10 @@ function Client() {
 
     return (
         <>
-            <div id='Client' className="w-full min-h-[500px] flex flex-col justify-center items-center ">
+            <div id='Client' className="w-full min-h-[500px] flex flex-col justify-center items-center select-none ">
                 <div className='w-[100%] flex flex-col'>
                     <div className='flex space-y-2 flex-col text-center mb-14 text-black'>
-                        <h1 className="md:text-4xl sm:text-3xl xxs:text-4xl  xs:text-6xl text-2xl font-bold text-center mt-8 mb-4 capitalize">
+                        <h1 className="md:text-4xl xsm:text-4xl sm:text-3xl xxs:text-3xl  xs:text-6xl text-2xl font-bold text-center mt-8 mb-4 capitalize">
                             {t('ClientPage.heading')}
                         </h1>
                         <span className='lg:text-3xl md:text-3xl sm:text-3xl xs:text-2xl xxs:text-lg  '>

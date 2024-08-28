@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import {Link} from "@nextui-org/react";
+import { Link } from 'react-router-dom';
 
 function ContactUs() {
     const { t, i18n } = useTranslation();
@@ -85,15 +85,15 @@ function ContactUs() {
     return (
         <>
             <div id='ContactUs' className='w-full py-16 text-black bg-[#6391FF] px-4'>
-                <div className='max-w-[1240px] max-h-[420px] xxs:max-h-[500px] mx-auto grid lg:grid-cols-3'>
-                    <div className='lg:col-span-2'>
+                <div className='max-w-[1240px] max-h-[420px] xxs:max-h-[640px] mx-auto grid lg:grid-cols-3'>
+                    <div className='lg:col-span-2 sm:mx-16 select-none'>
                         <h1 className='md:text-5xl sm:text-4xl text-2xl xxs:text-5xl font-bold py-6 xxs:py-2'> {t('ContactUsPage.heading')}</h1>
                         <h2 className='mt-4 md:text-3xl sm:text-2xl text-xl font-bold py-2 xxs:text-lg xxs:py-0'>{t('ContactUsPage.subheading')}</h2>
                     </div>
                     <div className='my-4 md:my-0 md:pr-4'>
                         <form className='flex flex-col sm:flex-cols items-center justify-between w-full' onSubmit={handleSubmit}>
                             <input
-                                className='p-3 m-2 flex w-full rounded-md text-black'
+                                className='p-3 m-2 flex w-full sm:w-5/6 rounded-md text-black'
                                 type="text"
                                 placeholder={t('ContactUsPage.placeholdername')}
                                 value={formDetails.firstName}
@@ -101,7 +101,7 @@ function ContactUs() {
                                 required
                             />
                             <input
-                                className='p-3 m-2 flex w-full rounded-md text-black'
+                                className='p-3 m-2 flex w-full sm:w-5/6  rounded-md text-black'
                                 type="text"
                                 placeholder={t('ContactUsPage.placeholdercompanyname')}
                                 value={formDetails.comName}
@@ -109,7 +109,7 @@ function ContactUs() {
                                 required
                             />
                             <input
-                                className='p-3  m-2 flex w-full rounded-md text-black'
+                                className='p-3  m-2 flex w-full sm:w-5/6  rounded-md text-black'
                                 type="email"
                                 placeholder={t('ContactUsPage.placeholderemail')}
                                 value={formDetails.email}
@@ -117,7 +117,7 @@ function ContactUs() {
                                 required
                             />
                             <textarea
-                                className='p-3 m-2 flex w-full rounded-md text-black'
+                                className='p-3 m-2 flex w-full  sm:w-5/6  rounded-md text-black'
                                 placeholder={t('ContactUsPage.placeholdermessage')}
                                 value={formDetails.message}
                                 onChange={(e) => onFormUpdate('message', e.target.value)}
