@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  @apply leading-[normal] m-0;
+  overflow-x: hidden;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+.user-select-none {
+  user-select: none; /* Standard property */
+  -webkit-user-select: none; /* For WebKit-based browsers */
+  -moz-user-select: none; /* For Mozilla Firefox */
+}
